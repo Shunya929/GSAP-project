@@ -1,0 +1,217 @@
+@use "reset";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+}
+body{
+  width: 100%;
+  padding-top: 50px;
+}
+main{
+  width: 100%;
+}
+.animaiton-area{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+path {
+  fill: none;
+  stroke: none;
+  stroke-width: 1px;
+  stroke-dasharray: 1180px;
+}
+
+.cls-1 {
+  fill: url(#Spectrum_);
+}
+
+.cls-2 {
+  fill: none;
+  stroke: url(#Spectrum_);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+
+.confetti {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.confetti span {
+  position: absolute;
+  top: -100%;/*アニメーション以外の紙吹雪を非表示*/
+  left: 0;
+}
+
+/*アニメーションの記述*/
+.confetti span:nth-child(2n + 1) {
+  animation: confetti1 5s 0s linear infinite;
+}
+
+.confetti span:nth-child(2n + 2) {
+  animation: confetti2 5s 0s linear infinite;
+}
+
+/*紙吹雪を回転させる記述*/
+@keyframes confetti1 {
+  0% {
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    top: 100%;
+    transform: translateX(20px) rotateX(180deg) rotateY(360deg);
+}
+}
+
+@keyframes confetti2 {
+  0% {
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+
+  100% {
+    top: 100%;
+    transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+  }
+}
+
+/*紙吹雪の配置*/
+.confetti span:nth-child(1) {
+  left: 0%;
+}
+
+.confetti span:nth-child(2) {
+  left: 10%;
+}
+
+.confetti span:nth-child(3) {
+  left: 20%;
+}
+
+.confetti span:nth-child(4) {
+  left: 30%;
+}
+
+.confetti span:nth-child(5) {
+  left: 40%;
+}
+
+.confetti span:nth-child(6) {
+  left: 50%;
+}
+
+.confetti span:nth-child(7) {
+  left: 60%;
+}
+
+.confetti span:nth-child(8) {
+  left: 70%;
+}
+
+.confetti span:nth-child(9) {
+  left: 80%;
+}
+
+.confetti span:nth-child(10) {
+  left: 90%;
+}
+
+.confetti span:nth-child(11) {
+  left: 100%;
+}
+
+/*紙吹雪の大きさ*/
+.confetti span:nth-child(3n + 1) {
+  width: 3vw;
+  height: 3vw;
+}
+
+.confetti span:nth-child(3n + 2) {
+  width: 2vw;
+  height: 2vw;
+}
+
+.confetti span:nth-child(3n + 3) {
+  width: 1.5vw;
+  height: 1.5w;
+}
+
+/*アニメーションの秒数*/
+.confetti span:nth-child(2n + 1) {
+  animation-duration: 5s;
+}
+
+.confetti span:nth-child(2n + 2) {
+  animation-duration: 6s;
+}
+
+.confetti span:nth-child(2n + 3) {
+  animation-duration: 10s;
+}
+
+.confetti span:nth-child(2n + 4) {
+  animation-duration: 4s;
+}
+
+/*紙吹雪が降り始めるまでの時間*/
+.confetti span:nth-child(2n + 1) {
+  animation-delay: 9s;
+}
+
+.confetti span:nth-child(2n + 2) {
+  animation-delay: 10s;
+}
+
+.confetti span:nth-child(2n + 3) {
+  animation-delay: 11s;
+}
+
+.confetti span:nth-child(2n + 4) {
+  animation-delay: 12s;
+}
+
+.confetti span:nth-child(2n + 5) {
+  animation-delay: 13s;
+}
+
+.confetti span:nth-child(2n + 6) {
+  animation-delay: 14s;
+}
+
+.confetti span:nth-child(2n + 7) {
+  animation-delay: 13s;
+}
+
+.confetti span:nth-child(2n + 8) {
+  animation-delay: 12s;
+}
+
+.confetti span:nth-child(2n + 9) {
+  animation-delay: 11s;
+}
+
+.confetti span:nth-child(2n + 10) {
+  animation-delay: 10s;
+}
+
+.confetti span:nth-child(2n + 11) {
+  animation-delay: 9s;
+}
+
+img {
+  width: 150%;
+  height: 150%;
+}

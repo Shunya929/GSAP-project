@@ -1,0 +1,670 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.15;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  border-top-width: 1px;
+  box-sizing: content-box;
+  clear: both;
+  color: inherit;
+  /* 1 */
+  height: 0;
+  margin: 0;
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  vertical-align: middle;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  /* 1 */
+  border-collapse: collapse;
+  border-color: inherit;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0;
+  vertical-align: top;
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  padding-top: 50px;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.animaiton-area {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+path {
+  fill: none;
+  stroke: none;
+  stroke-width: 1px;
+  stroke-dasharray: 1180px;
+}
+
+.cls-1 {
+  fill: url(#Spectrum_);
+}
+
+.cls-2 {
+  fill: none;
+  stroke: url(#Spectrum_);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+.confetti {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.confetti span {
+  left: 0;
+  position: absolute;
+  top: -100%; /*アニメーション以外の紙吹雪を非表示*/
+}
+
+/*アニメーションの記述*/
+.confetti span:nth-child(2n+1) {
+  -webkit-animation: confetti1 5s 0s linear infinite;
+  animation: confetti1 5s 0s linear infinite;
+}
+
+.confetti span:nth-child(2n+2) {
+  -webkit-animation: confetti2 5s 0s linear infinite;
+  animation: confetti2 5s 0s linear infinite;
+}
+
+/*紙吹雪を回転させる記述*/
+@-webkit-keyframes confetti1 {
+  0% {
+    -webkit-transform: translateX(0) rotateX(0) rotateY(0);
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px) rotateX(180deg) rotateY(360deg);
+    top: 100%;
+    transform: translateX(20px) rotateX(180deg) rotateY(360deg);
+  }
+}
+@keyframes confetti1 {
+  0% {
+    -webkit-transform: translateX(0) rotateX(0) rotateY(0);
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(20px) rotateX(180deg) rotateY(360deg);
+    top: 100%;
+    transform: translateX(20px) rotateX(180deg) rotateY(360deg);
+  }
+}
+@-webkit-keyframes confetti2 {
+  0% {
+    -webkit-transform: translateX(0) rotateX(0) rotateY(0);
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+    top: 100%;
+    transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+  }
+}
+@keyframes confetti2 {
+  0% {
+    -webkit-transform: translateX(0) rotateX(0) rotateY(0);
+    top: -10%;
+    transform: translateX(0) rotateX(0) rotateY(0);
+  }
+  100% {
+    -webkit-transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+    top: 100%;
+    transform: translateX(-20vw) rotateX(180deg) rotateY(360deg);
+  }
+}
+/*紙吹雪の配置*/
+.confetti span:nth-child(1) {
+  left: 0%;
+}
+
+.confetti span:nth-child(2) {
+  left: 10%;
+}
+
+.confetti span:nth-child(3) {
+  left: 20%;
+}
+
+.confetti span:nth-child(4) {
+  left: 30%;
+}
+
+.confetti span:nth-child(5) {
+  left: 40%;
+}
+
+.confetti span:nth-child(6) {
+  left: 50%;
+}
+
+.confetti span:nth-child(7) {
+  left: 60%;
+}
+
+.confetti span:nth-child(8) {
+  left: 70%;
+}
+
+.confetti span:nth-child(9) {
+  left: 80%;
+}
+
+.confetti span:nth-child(10) {
+  left: 90%;
+}
+
+.confetti span:nth-child(11) {
+  left: 100%;
+}
+
+/*紙吹雪の大きさ*/
+.confetti span:nth-child(3n+1) {
+  height: 3vw;
+  width: 3vw;
+}
+
+.confetti span:nth-child(3n+2) {
+  height: 2vw;
+  width: 2vw;
+}
+
+.confetti span:nth-child(3n+3) {
+  height: 1.5w;
+  width: 1.5vw;
+}
+
+/*アニメーションの秒数*/
+.confetti span:nth-child(2n+1) {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+}
+
+.confetti span:nth-child(2n+2) {
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+.confetti span:nth-child(2n+3) {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+}
+
+.confetti span:nth-child(2n+4) {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+
+/*紙吹雪が降り始めるまでの時間*/
+.confetti span:nth-child(2n+1) {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+.confetti span:nth-child(2n+2) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.confetti span:nth-child(2n+3) {
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+
+.confetti span:nth-child(2n+4) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.confetti span:nth-child(2n+5) {
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+.confetti span:nth-child(2n+6) {
+  -webkit-animation-delay: 14s;
+  animation-delay: 14s;
+}
+
+.confetti span:nth-child(2n+7) {
+  -webkit-animation-delay: 13s;
+  animation-delay: 13s;
+}
+
+.confetti span:nth-child(2n+8) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+.confetti span:nth-child(2n+9) {
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s;
+}
+
+.confetti span:nth-child(2n+10) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.confetti span:nth-child(2n+11) {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+img {
+  height: 150%;
+  width: 150%;
+}
